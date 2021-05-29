@@ -20,9 +20,7 @@ const Login = (props) => {
     console.log("posting:", data);
     axios.post("http://localhost:5000/login", {
         data: data,
-      })
-
-      .then((res) => {
+      }).then((res) => {
         console.log(res);
         if (res.data != "Wrong") {
           window.location.href = "/AddExpense";

@@ -54,17 +54,17 @@ const Signup = (props) => {
               <h2>Sign Up</h2>
                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
                         <form onSubmit={submitHandler}>
-                        <p style={{color:"red",textAlign:"center"}} id="error"></p>
-                        <br/>
-                        <label>Enter Name</label>
-                        <input name="name" id="name" type="text" placeholder="Enter your name" className="form-control" value={userName} onChange={(e) => setUserName(e.target.value)} /> <br/>
-                        <label>Enter Age</label>
-                        <input name="age" id="age" type="number" placeholder="Enter your age" className="form-control" value={userAge} onChange={(e) => setUserAge(e.target.value)} /> <br/>
-                        <label>Enter Email</label>
-                        <input name="email" id="email" type="email" placeholder="Enter your email" className="form-control" value={userId} onChange={(e) => setUserID(e.target.value)} /> <br/>
-                        <label>Enter Password</label>
-                        <input name="password" id="password" type="password" placeholder="Enter your password" className="form-control" value={pw} onChange={(e) => setPw(e.target.value)} /> <br/>
-                        <button type="submit" name="submit" className="btn email">Sign Up</button>
+                          <p style={{color:"red",textAlign:"center"}} id="error"></p>
+                          <br/>
+                          <label>Enter Name</label>
+                          <input name="name" id="name" type="text" placeholder="Enter your name" className="form-control" value={userName} onChange={(e) => setUserName(e.target.value)} required/> <br/>
+                          <label>Enter Age</label>
+                          <input name="age" id="age" type="number" placeholder="Enter your age" className="form-control" value={userAge} onChange={(e) => setUserAge(e.target.value)} required/> <br/>
+                          <label>Enter Email</label>
+                          <input name="email" id="email" type="email" placeholder="Enter your email" className="form-control" value={userId} onChange={(e) => setUserID(e.target.value)} required/> <br/>
+                          <label>Enter Password</label>
+                          <input name="password" id="password" type="password" placeholder="Enter your password" className="form-control" value={pw} onChange={(e) => setPw(e.target.value)} required/> <br/>
+                          <button type="submit" name="submit" className="btn email">Sign Up</button>
                     </form>
             </div>
           </div>
