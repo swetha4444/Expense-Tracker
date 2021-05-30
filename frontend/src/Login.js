@@ -47,7 +47,7 @@ const Login = (props) => {
 		<div className="row">
 			<div className="col-md-offset-2 col-md-8 col-sm-12">
 				<h2>Login</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+        <p>Enter correct credentials to login. <br/> <span style={{color:"blueviolet"}}>Don't have an account? Create a new one by signing up!</span></p>
         <form onSubmit={submitHandler}>
             <p style={{color:"red",textAlign:"center"}} id="error"></p>
             <br/>

@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import {Bar} from 'react-chartjs-2';
 import axios from "axios";
+import DashTopbar from "../DashTopbar";
+import ChartNav from "../ChartNav";
+import Footer from '../Footer';
+
 
 export default class BarYear extends Component
 {
@@ -17,8 +21,6 @@ export default class BarYear extends Component
     handleChange(e) {
         var year;
         document.getElementById("barCanvas").style.display="block";
-        document.getElementById("pieCanvas").style.display="none"
-        document.getElementById("pieheading").innerHTML="";;
         if (e.target.value === "null")
         {
             document.getElementById("barheading").innerHTML="Current Year Expenses";
@@ -35,7 +37,7 @@ export default class BarYear extends Component
         })
         .then((res) => {
             console.log(res);
-            if(res == "No Results")
+            if(res === "No Results")
             {
                 document.getElementById("barheading").innerHTML="No Expenses on this year."; 
             }
@@ -50,7 +52,17 @@ export default class BarYear extends Component
 
     render(){
         return(
-            <div>
+            <body>
+      <DashTopbar />
+      <br/><br/>
+      <ChartNav />
+      <div id="team">
+	    <div className="container">
+        <div className="row">
+            <div className="col-md-offset-2 col-md-8 col-sm-12">
+              <h2>Year Wise Spendings</h2>
+              <p>An annual budget is a plan for a company's projected expenditures over the course of a year. Annual budgets act as benchmarks against which an individual or company can measure progress and as tools to help better manage money.</p>
+              <div>
                 <br />
                 <div class="select">
                     <select name="year" onChange={this.handleChange}>
@@ -80,6 +92,14 @@ export default class BarYear extends Component
                     }}
                 />
             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </body>
         );
     }
 }
+
+

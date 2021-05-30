@@ -207,3 +207,8 @@
 #dashnav{
 	display:block;
 }
+
+#chartnav a:hover{
+	background-color: rgb(88, 83, 83);
+	border-radius: 20px;
+}

@@ -52,7 +52,7 @@ const Signup = (props) => {
           <div className="row">
             <div className="col-md-offset-2 col-md-8 col-sm-12">
               <h2>Sign Up</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+                      <p>Enter your details to signup. Your personal information is safe with us!</p>
                         <form onSubmit={submitHandler}>
                           <p style={{color:"red",textAlign:"center"}} id="error"></p>
                           <br/>

@@ -6,6 +6,9 @@ import Login from "./Login";
 import Signup from "./Signup";
 import Dashboard from "./Dashboard"
 import AddExpense from "./AddExpense"
+import BarYear from "./charts/BarYear";
+import PieCategory from "./charts/PieCategory";
+import LineYear from "./charts/LineYear";
 
 export default function App() {
   return (
@@ -29,6 +32,15 @@ export default function App() {
           </Route>
           <Route path="/dashboard">
             <Dashboard />
+          </Route>
+          <Route exact path="/BarYear">
+            <BarYear />
+          </Route>
+          <Route exact path="/PieCategory">
+            <PieCategory />
+          </Route>
+          <Route exact path="/LineYear">
+            <LineYear />
           </Route>
           <Route path="/logout">
             <Home />
