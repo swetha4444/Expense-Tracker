@@ -133,13 +133,14 @@ app.post("/baryear", function (req, res) {
   var data = [];
   const gte = String(year)+"-01-01T00:00:00.000Z";
   const lt = String(year+1)+"-01-01T00:00:00.000Z";
+  var mysort = { date: 1 };
   console.log(gte,lt);
   db.collection('expenses').find({
     "date": {
         $gte: new Date(gte),
         $lt: new Date(lt),
     },"user_id":current_id
-  },{$orderby: { date : 1 }}).toArray((err,result)=>{
+  }).sort(mysort).toArray((err,result)=>{
     console.log("result: ",result);
     var i;
     if (result.length === 0)
@@ -231,6 +232,47 @@ app.post("/piecategory", function (req, res) {
           '#35014F',
           '#a7aaab'
           ],
+          data: count
+        }
+      ]
+    }
+
+    res.send(state);
+  });
+})
+
+
+//LineYears
+app.post("/lineyear", function (req, res) {
+  console.log("new request:",req.body.data);
+  console.log(">>USER:",current_id)
+  const years = [2015,2016,2017,2018,2019,2020,2021];
+  var count = [0,0,0,0,0,0,0];
+
+  db.collection("expenses").find({ user_id: current_id }).toArray((err,result)=>{
+    if (err) throw err;
+    console.log(result);
+    for(var i = 0; i < result.length; i++)
+    {
+      for(var j = 0; j < result.length; j++)
+      {
+        if ((result[i].date.getFullYear()) === years[j])
+        {
+          count[j] += result[i].expense;
+        }
+      }  
+    }
+
+    const state = {
+      labels: years,
+      datasets: [
+        {
+          label: 'Net Expense',
+          fill: false,
+          lineTension: 0.5,
+          backgroundColor: 'rgba(75,192,192,1)',
+          borderColor: '#f4f0fc',
+          borderWidth: 2,
           data: count
         }
       ]
