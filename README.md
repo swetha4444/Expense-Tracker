@@ -1,2 +1,2 @@
 # MERN-Stack-Project---Expense-Tracker
-![grab-landing-page](https://github.com/swetha4444/Expense-Tracker/blob/a3b1c39f64c562fa8efd1c8ad8a6d964f07a9ad5/ezgif.com-gif-maker.gif)
+![bar-graph](https://github.com/swetha4444/Expense-Tracker/blob/96ee2eeb7ca1eb74e636510bd9703feecfefb826/ezgif.com-gif-maker%20(1).gif)
