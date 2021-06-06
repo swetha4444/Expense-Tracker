@@ -1,5 +1,5 @@
 # MERN Stack Project - Expense-Tracker
-Keeping track of your expenses is an important part of managing your overall finances. Using this application, one can not only keep an account of his/her expenses but can get a statistical insight of the overall spendings. 
+Keeping track of your expenses is an important part of managing your overall finances. Using this application, one can not only keep an account of his/her expenses but can get a statistical insight of your overall spendings. 
 
 **Project Name:** Expense Tracker System <br>
 **Database:**                      MongoDB <br>
