@@ -11,4 +11,4 @@ Keeping track of your expenses is an important part of managing your overall fin
 ![line-graph-chart](https://github.com/swetha4444/Expense-Tracker/blob/75cf128b3cb3426758196169366aa0aba2e644a1/ezgif.com-gif-maker%20(3).gif)
 
 ### Note
-The project is also open to contributions, if you're interested, you can contact me.
+The project is also open to contributions, if you're interested you can contact me.
