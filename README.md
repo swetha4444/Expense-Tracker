@@ -6,10 +6,9 @@ Keeping track of your expenses is an important part of managing your overall fin
 **User Interface Design:**       :  HTML, CSS, Bootstrap, Reat JS, Chart JS <br>
 **Web Browser:**                  Google Chrome, Microsoft Edge <br>
 <img width="525" alt="mern" src="https://user-images.githubusercontent.com/68152189/121789725-e38c9780-cbf5-11eb-819d-d1a895d651c9.png">
-<br>
-![bar-graph] (https://github.com/swetha4444/Expense-Tracker/blob/96ee2eeb7ca1eb74e636510bd9703feecfefb826/ezgif.com-gif-maker%20(1).gif)
-![pie-chart] (https://github.com/swetha4444/Expense-Tracker/blob/1b6b9def42e91924c73dd0b9fbc01c5b93c04812/ezgif.com-gif-maker%20(2).gif)
-![line-graph-chart] (https://github.com/swetha4444/Expense-Tracker/blob/75cf128b3cb3426758196169366aa0aba2e644a1/ezgif.com-gif-maker%20(3).gif)
+![bar-graph](https://github.com/swetha4444/Expense-Tracker/blob/96ee2eeb7ca1eb74e636510bd9703feecfefb826/ezgif.com-gif-maker%20(1).gif)
+![pie-chart](https://github.com/swetha4444/Expense-Tracker/blob/1b6b9def42e91924c73dd0b9fbc01c5b93c04812/ezgif.com-gif-maker%20(2).gif)
+![line-graph-chart](https://github.com/swetha4444/Expense-Tracker/blob/75cf128b3cb3426758196169366aa0aba2e644a1/ezgif.com-gif-maker%20(3).gif)
 
 ### Note
 The project is also open to contributions, if you're interested you can contact me.
